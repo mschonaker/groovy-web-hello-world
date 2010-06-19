@@ -29,14 +29,30 @@
 				<artifactId>gmaven-plugin</artifactId>
 				<executions>
 					<execution>
+						<id>compile</id>
 						<goals>
 							<goal>compile</goal>
-							<goal>testCompile</goal>
 						</goals>
 						<configuration>
 							<sources>
 								<fileset>
 									<directory>${pom.basedir}/src/main/groovy</directory>
+									<includes>
+										<include>**/*.groovy</include>
+									</includes>
+								</fileset>
+							</sources>
+						</configuration>
+					</execution>
+					<execution>
+						<id>test</id>
+						<goals>
+							<goal>testCompile</goal>
+						</goals>
+						<configuration>
+							<sources>
+								<fileset>
+									<directory>${pom.basedir}/src/test/groovy</directory>
 									<includes>
 										<include>**/*.groovy</include>
 									</includes>
