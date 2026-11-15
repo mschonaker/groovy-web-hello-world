@@ -1,4 +1,10 @@
 .classpath
 .project
-target
 .settings
+target
+
+.idea/
+*.iml
+.vscode/
+
+.DS_Store
