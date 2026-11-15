@@ -16,8 +16,10 @@ The stack is modernized. The idea is the same.
 
 ## Requirements
 
-- JDK 17 or newer
+- JDK 17
 - Maven 3.9 or newer
+
+The POM targets Java 17. Groovy 4 cannot read the class files of JDK 27 yet.
 
 ## Run
 
